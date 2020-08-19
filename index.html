@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Weather Dashboard</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <!-- Style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-light grey lighten-4 text-center">
+    <span class="navbar-brand">
+      <h1>Weather Dashboard</h1>
+    </span>
+  </nav>
+  <br>
+
+    <div class="row">
+
+      <!-- Main Container -->
+      <div class="col-sm-8">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h2 class="display-4"></h2>
+
+            <!-- Container for Main City -->
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <div id="currentDay"></div>
+                <div class="currentCity"></div>
+                <div class="weather"></div>
+                <div class="temperature"></div>
+                <div class="humidity"></div>
+                <div class="windSpeed"></div>
+              </div>
+            </div>
+            <!-- Main City Container End -->
+
+            <p class="lead">
+              <!-- 5 Day Forecast -->
+              <div class="container">
+                <h2>5-Day Forecast:</h2>
+                <div class="row">
+                  <div class="col">
+                    <div class="card">
+                      <br>
+                          <div class="dayOnedate"></div>
+                          <br>
+                           <div class="dayOnetemp"></div>
+                           <div class="dayOnehumidity"></div>        
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <br>
+                          <div class="dayTwodate"></div>
+                          <br>
+                           <div class="dayTwotemp"></div>
+                           <div class="dayTwohumidity"></div>        
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <br>
+                          <div class="dayThreedate"></div>
+                          <br>
+                           <div class="dayThreetemp"></div>
+                           <div class="dayThreehumidity"></div>        
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <br>
+                          <div class="dayFourdate"></div>
+                          <br>
+                           <div class="dayFourtemp"></div>
+                           <div class="dayFourhumidity"></div>        
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <br>
+                          <div class="dayFivedate"></div>
+                          <br>
+                           <div class="dayFivetemp"></div>
+                           <div class="dayFivehumidity"></div>        
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of 5 Day Forecast -->
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search & Other Cities -->
+      <div class="col-sm-4">
+        <div class="container">
+          <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
+            <input class="form-control form-control-sm mr-3 w-75 searchBtn" type="text" placeholder="Enter a City"
+              aria-label="Enter a City">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </form>
+          <!-- <input class="form-control" id="listSearch" type="text" placeholder="Enter a City Name here"> -->
+          <br>
+          <ul class="list-group" id="myList">
+            <li class="list-group-item">
+              <button type="button" class="btn btn-default btn-lg btn-block honolulu">Honolulu</button>
+            </li>
+            <li class="list-group-item">
+              <button type="button" class="btn btn-default btn-lg btn-block newYork">New York</button>
+            </li>
+            <li class="list-group-item">
+              <button type="button" class="btn btn-default btn-lg btn-block denver">Denver</button>
+            </li>
+            <li class="list-group-item">
+              <button type="button" class="btn btn-default btn-lg btn-block tokyo">Tokyo</button>
+            </li>
+            <li class="list-group-item">
+              <button type="button" class="btn btn-default btn-lg btn-block london">
+                London</button></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<!-- Moments.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<!-- Local -->
+<script src="app.js"></script>
+</body>
+</html>
+
+
