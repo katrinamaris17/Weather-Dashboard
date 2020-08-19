@@ -1,18 +1,11 @@
 # 06 Server-Side APIs: Weather Dashboard
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+The following Server-Side API was used for this project: 
+[OpenWeather API](https://openweathermap.org/api)
+The project also requires the use of localStorage to save user searches. 
 
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
 
-## User Story
-
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
-
-## Acceptance Criteria
+## The Project has the following acceptance criteria
 
 ```
 GIVEN a weather dashboard with form inputs
@@ -31,17 +24,23 @@ WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
 ```
 
+## Process:
+MD Bootstrap was used for the initial HTML styling. 
+
+The JS file is currently incomplete and requires further work in order to store a user's search history using localStorage.  
+
+The app will currently allow a user to search a city and generate the current weather forecast along with a 5-day forecast.  This function is ran from line 29-105 of the app.js file. Currently, the app requires users to click on the "search icon" and will not accept an enter when a user types in a City. I plan on modifying the search form to eliminate the search icon or possibly just change the event listener.   
+
+I initially hard coded other cities into the side buttons but realized this section was meant to store user's search history.  This function needs re-work so data is grabbed from localStorage and displayed into these buttons.  
+
+Additionally, the app also requires a function that allows the background color of the Main City container to change color or display an icon that matches the weather conditions.  I planned to run a function using an if/else statement here.  
+
+Lastly, the app requires CSS styling. 
+
+This app is currently in progress and updates are being made to address the incomplete items mentioned above. 
+
 The following image demonstrates the application functionality:
 
-![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
+![weather dashboard screenshot](./Assets/Weather-Dashboard.png)
 
-## Review
 
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

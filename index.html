@@ -32,7 +32,7 @@
           <div class="container">
             <h2 class="display-4"></h2>
 
-            <!-- Container for Main City -->
+            <!-- Container for Current City -->
             <div class="jumbotron jumbotron-fluid">
               <div class="container">
                 <div id="currentDay"></div>
@@ -107,9 +107,10 @@
       <div class="col-sm-4">
         <div class="container">
           <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
-            <input class="form-control form-control-sm mr-3 w-75 searchBtn" type="text" placeholder="Enter a City"
-              aria-label="Enter a City">
-            <i class="fas fa-search" aria-hidden="true"></i>
+            <input class="form-control form-control-sm mr-3 w-75" id="searchTxt" type="text" placeholder="Enter a City"
+              aria-label="Enter a City" >
+            <i class="fas fa-search" id="searchIcon" aria-hidden="true">
+            </i>
           </form>
           <!-- <input class="form-control" id="listSearch" type="text" placeholder="Enter a City Name here"> -->
           <br>
